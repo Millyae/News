@@ -4,8 +4,8 @@ from .models import News
 
 class NewsList(ListView):
     model = News
-    ordering = '-created_at'  # Исправлено на "created_at", так как поле "name" отсутствует в модели
-    template_name = 'news_list.html'  # Исправлено имя шаблона
+    ordering = '-created_at'
+    template_name = 'news_list.html' 
     context_object_name = 'news'
 
 class NewsDetail(DetailView):
